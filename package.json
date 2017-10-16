@@ -1,0 +1,23 @@
+{
+  "name": "chrome-launcher-client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenjunxiao/chrome-launcher-client.git"
+  },
+  "author": "Wenjun Xiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wenjunxiao/chrome-launcher-client/issues"
+  },
+  "homepage": "https://github.com/wenjunxiao/chrome-launcher-client#readme",
+  "dependencies": {
+    "superagent": "^3.6.3",
+    "uuid": "^3.1.0"
+  }
+}
