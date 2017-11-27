@@ -8,10 +8,11 @@ function launch(opts, host) {
   return request
     .post(`http://${host}:${opts.port}/api/launch/${uid}`)
     .send(opts).then(rsp => {
-      return Object.assign({ pid: uid }, rsp.body.data || {}, {
+      const data = rsp.body.data || {};
+      return Object.assign({ pid: uid }, data, {
         kill() {
           return request.post(`http://${host}:${opts.port}/api/kill/${uid}`)
-            .send(rsp.body.data || {})
+            .send(data)
             .then(rsp => {
               return rsp.body.success
             });
